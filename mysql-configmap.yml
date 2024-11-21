@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  MYSQL_DATABASE: "flight2024"
+  #MYSQL_USER: "root"
+  #MYSQL_PASSWORD: ""
+  MYSQL_ROOT_PASSWORD: ""
+
+#apiVersion: v1
+#data:
+#  MYSQL_ROOT_PASSWORD: ""
+#  MYSQL_PASSWORD: ""
+#  MYSQL_USER: "root"
+#kind: ConfigMap
+#metadata:
+#  annotations:
+#    kubectl.kubernetes.io/last-applied-configuration: |
+#      {"apiVersion":"v1","data":{"MYSQL_PASSWORD":"","MYSQL_USER":"root"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":null,"name":"mysql-config","namespace":"default"}}
+#  creationTimestamp: "2024-11-20T23:41:50Z"
+#  name: mysql-config
+#  namespace: default
+#  resourceVersion: "8372"
+#  uid: 9f7632fa-bd87-4a0e-b3ab-433716add300
